@@ -1,0 +1,22 @@
+body,
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    border: solid 1px black;
+    min-width: 200px;
+    min-height: 200px;
+}
+li {
+  list-style: none;
+
+}
+.done {
+  text-decoration: line-through;
+  color: #f5f5dc;
+  text-shadow: 1px 1px 1px #0c0c0c;
+}
