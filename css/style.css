@@ -7,7 +7,6 @@ html {
 }
 
 .container {
-    border: solid 1px black;
     min-width: 200px;
     min-height: 200px;
 }
