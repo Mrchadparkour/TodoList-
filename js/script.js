@@ -13,4 +13,27 @@ $(document).ready(function() {
 
       });
     });
+  // the following is the code for the balloon
+    var balloon = function (sketch) {
+
+  var x = 50;
+  var y = 50;
+
+  sketch.setup = function() {
+    sketch.createCanvas(100,200);
+
+  };
+
+  sketch.draw = function() {
+    sketch.background('#f8e2da');
+    sketch.fill('blue');
+    sketch.ellipse(x,y,60,75);
+    sketch.line(x,87,50,175);
+
+
+  };
+};
+
+var myBalloon = new p5(balloon);
+
 });
