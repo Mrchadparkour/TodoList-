@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 body,
 html {
     display: flex;
@@ -7,7 +8,6 @@ html {
 }
 
 .container {
-    border: solid 1px black;
     min-width: 200px;
     min-height: 200px;
 }
@@ -45,3 +45,8 @@ body {
   background-color: #f8e2da;
 	font-family: 'Raleway', sans-serif;
   }
+li {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 40px;
+
+}

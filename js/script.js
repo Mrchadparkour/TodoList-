@@ -7,33 +7,37 @@ $(document).ready(function() {
       $(this).fadeOut(1000, function () {
         if ($(this).find("input").is(':checked')) {
           $(this).appendTo('#finishedList').fadeIn(2).addClass('done');
+          $(this).
         }else {
           $(this).appendTo('#toDolist').fadeIn(2).removeClass('done');
         }
 
       });
     });
-  // the following is the code for the balloon
-    var balloon = function (sketch) {
 
-  var x = 50;
-  var y = 50;
-
+    // the following is the code for the balloon
+var myp5 = new p5(function(sketch) {
+  var yPos = 0;
   sketch.setup = function() {
-    sketch.createCanvas(100,200);
-
+    var myCanvas = sketch.createCanvas(100,900);
+    myCanvas.parent("balloonContainer")
+    sketch.frameRate(50);
   };
 
   sketch.draw = function() {
+    yPos = yPos - 1;
+    if (yPos < 0) {
+      yPos = window.innerHeight;
+    }
+
     sketch.background('#f8e2da');
     sketch.fill('blue');
-    sketch.ellipse(x,y,60,75);
-    sketch.line(x,87,50,175);
-
-
+    sketch.ellipse(50,yPos,60,75);
+    sketch.line(50,yPos + 40,50,yPos + 115);
   };
-};
 
-var myBalloon = new p5(balloon);
+});
+
+myp5();
 
 });
