@@ -1,0 +1,45 @@
+body, html {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ body {
+  background-image: url("../img/gplaypattern.png");
+  background-repeat: repeat;
+  width: 100%;
+  background-color: #bcbaba;
+}
+.container {
+    border: solid 1px black;
+    min-width: 200px;
+    min-height: 200px;
+    background-color: rgba(186, 186, 186, 0.5);
+  }
+h1 {
+  font-family: 'Raleway' sans-serif;
+  font-size: 40px;
+  font-weight: lighter;
+  color: #4a4a4a;
+}
+h2 {
+  font-family: 'Raleway' sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: lighter;
+  color: #4a4a4a;
+
+}
+ li {
+   list-style: none;
+   font-family: 'Architects Daughter', cursive;
+   font-size: 20px;
+   color: #4a4a4a;
+
+ }
+ .done {
+   text-decoration: line-through;
+   color: #f5f5dc;
+   text-shadow: 1px 1px 1px #0c0c0c;
+ }

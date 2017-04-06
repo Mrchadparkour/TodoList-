@@ -3,39 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Spirax|Architects+Daughter" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link href = "CSS/style.css" type = "text/css" rel = "stylesheet" >
 </head>
 
 <body>
     <form>
       <input id="newTask" type="text" name="task">
     </form>
-    <button>Submit task</button>
+    <button>Add a New Task!</button>
     <h1> Today's To Do List</h1>
     <div class="container" id="toDo">
       <h2>To Do</h2>
-
+         <ul id="toDolist"></ul>
     </div>
-    <div class="container" id="finshed">
+    <div class="container" id="finished">
       <h2>Finished</h2>
+      <div class = "done">
+         <ul id="finishedList">
+         </ul>
+      </div>
     </div>
 </body>
-<style>
-    body,
-    html {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .container {
-      border: solid 1px black;
-      min-width: 200px;
-      min-height: 200px;
-    }
-</style>
-<script>
 
-</script>
-
+<script type="text/javascript" src="js/script.js"></script>
 </html>
