@@ -22,28 +22,3 @@ $(document).ready(function() {
     }
   });
 });
-    // the following is the code for the balloon
-/* var myp5 = new p5(function(sketch) {
-  var yPos = 0;
-  sketch.setup = function() {
-    var myCanvas = sketch.createCanvas(100,900);
-    myCanvas.parent("balloonContainer")
-    sketch.frameRate(50);
-  };
-
-  sketch.draw = function() {
-    yPos = yPos - 1;
-    if (yPos < 0) {
-      yPos = window.innerHeight;
-    }
-
-    sketch.background('#f8e2da');
-    sketch.fill('blue');
-    sketch.ellipse(50,yPos,60,75);
-    sketch.line(50,yPos + 40,50,yPos + 115);
-  };
-
-});
-
-myp5();
-*/
