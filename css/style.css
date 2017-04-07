@@ -12,10 +12,6 @@ html {
     min-height: 200px;
 }
 
-#balloonColumn {
-  float: left;
-}
-
 li {
   list-style: none;
 
@@ -54,4 +50,14 @@ li {
   font-family: 'Architects Daughter', cursive;
   font-size: 40px;
 
+}
+
+#balloonContainer {
+  position: absolute;
+  left: 20% auto;
+}
+
+iframe {
+  border: 0 none;
+  overflow: hidden;
 }
