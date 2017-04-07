@@ -64,17 +64,19 @@ h2 {
 
 }
 
-#balloonContainer {
+.p5Container {
   position: absolute;
-  left: 20%;
   top: 1%;
+  left: 20%;
 
 }
 
-iframe {
+.p5Container iframe {
   position: absolute;
   border: 0 none;
+  left: 0;
+  width: 100px;
   height: 900px;
   z-index: -1;
-  
+
 }

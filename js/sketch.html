@@ -7,10 +7,7 @@
   <script type="text/javascript">
 
   var myp5 = new p5(function(sketch) {
-    var img;
-    sketch.preload() {
-      img = loadImage("../img/new_year_background.png");
-    }
+
 
     var yPos = 0;
     sketch.setup = function() {
@@ -24,7 +21,7 @@
         yPos = window.innerHeight;
       }
 
-      sketch.background(img, 100%);
+      sketch.background("#DCDCDC");
       sketch.fill('blue');
       sketch.ellipse(50,yPos,60,75);
       sketch.line(50,yPos + 40,50,yPos + 115);
