@@ -6,14 +6,31 @@ html {
     justify-content: center;
     flex-direction: column;
 }
+body {
+ background-image: url("../img/new_year_background.png");
+ background-repeat: repeat;
+ width: 100%;
+ font-family: 'Raleway', sans-serif;
+ color: #303030;
+}
 
 .container {
-    min-width: 200px;
+    min-width: 400px;
     min-height: 200px;
+    background: linear-gradient(45deg, #AB8D8D 10%,#F7B2B2 50%,#F1D8D8 75%);
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px rgba(34,62,66,.25);
+    -webkit-transition: box-shadow 1s ease;
+    transition: box-shadow 1s ease;
+    padding: 10px;
+    margin: 10px;
+    opacity: .75;
 }
 li {
   list-style: none;
-
+  font-family: 'Architects Daughter', cursive;
+  font-size: 30px;
+  color: #303030;
 }
 .done {
   text-decoration: line-through;
@@ -22,31 +39,13 @@ li {
 }
 
 h1 {
-  background: linear-gradient(45deg, #AB8D8D 10%,#F7B2B2 50%,#F1D8D8 75%);
-  border-radius: 2px;
-  box-shadow: 0px 2px 4px rgba(34,62,66,.25);
-  color: black;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 35px;
   letter-spacing: 1px;
-  padding: 10px 10px;
-  text-decoration: none;
-  -webkit-transition: box-shadow 1s ease;
-  transition: box-shadow 1s ease;
+  color: #303030;
 }
 
 h2 {
   text-align: center;
-  font-weight: bold;
-  background-color: #F7B2B2;
-}
-
-body {
-  background-color: #f8e2da;
-	font-family: 'Raleway', sans-serif;
-  }
-li {
-  font-family: 'Architects Daughter', cursive;
-  font-size: 40px;
-
+  font-weight: lighter;
+  font-size: 30px;
 }
