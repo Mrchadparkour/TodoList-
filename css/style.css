@@ -66,10 +66,15 @@ h2 {
 
 #balloonContainer {
   position: absolute;
-  left: 20% auto;
+  left: 20%;
+  top: 1%;
+
 }
 
 iframe {
+  position: absolute;
   border: 0 none;
-  overflow: hidden;
+  height: 900px;
+  z-index: -1;
+  
 }

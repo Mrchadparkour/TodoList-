@@ -7,10 +7,15 @@
   <script type="text/javascript">
 
   var myp5 = new p5(function(sketch) {
+    var img;
+    sketch.preload() {
+      img = loadImage("../img/new_year_background.png");
+    }
+
     var yPos = 0;
     sketch.setup = function() {
       sketch.createCanvas(100,900);
-      sketch.frameRate(50);
+      sketch.frameRate(70);
     };
 
     sketch.draw = function() {
@@ -19,7 +24,7 @@
         yPos = window.innerHeight;
       }
 
-      sketch.background('#f8e2da');
+      sketch.background(img, 100%);
       sketch.fill('blue');
       sketch.ellipse(50,yPos,60,75);
       sketch.line(50,yPos + 40,50,yPos + 115);
