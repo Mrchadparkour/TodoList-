@@ -7,16 +7,23 @@ $(document).ready(function() {
       $(this).fadeOut(1000, function () {
         if ($(this).find("input").is(':checked')) {
           $(this).appendTo('#finishedList').fadeIn(2).addClass('done');
-          $(this).
-        }else {
+        }
+        else {
           $(this).appendTo('#toDolist').fadeIn(2).removeClass('done');
         }
 
       });
     });
 
+    $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
     // the following is the code for the balloon
-var myp5 = new p5(function(sketch) {
+/* var myp5 = new p5(function(sketch) {
   var yPos = 0;
   sketch.setup = function() {
     var myCanvas = sketch.createCanvas(100,900);
@@ -39,5 +46,4 @@ var myp5 = new p5(function(sketch) {
 });
 
 myp5();
-
-});
+*/
