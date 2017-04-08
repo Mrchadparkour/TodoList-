@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
-body,
-html {
+.flex-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex: 2;
 }
 body {
  background-image: url("../img/new_year_background.png");
@@ -12,25 +12,29 @@ body {
  width: 100%;
  font-family: 'Raleway', sans-serif;
  color: #303030;
+ margin-right: 0px;
+ margin-left: 0px;
 }
 
-.container {
-    min-width: 400px;
-    min-height: 200px;
+.listBox {
+    min-width: 40%;
+    min-height: 20%;
     background: linear-gradient(45deg, #AB8D8D 10%,#F7B2B2 50%,#F1D8D8 75%);
-    border-radius: 2px;
-    box-shadow: 0px 2px 4px rgba(34,62,66,.25);
+    border-radius: .125em;
+    box-shadow: 0px 2px 40px rgba(34,62,66,.25);
     -webkit-transition: box-shadow 1s ease;
     transition: box-shadow 1s ease;
-    padding: 10px;
-    margin: 10px;
+    padding: 2%;
+    margin: 5%;
     opacity: .75;
+    box-sizing: border-box;
+    float: left;
 }
 
 li {
   list-style: none;
   font-family: 'Architects Daughter', cursive;
-  font-size: 30px;
+  font-size: 2em;
   color: #303030;
 }
 .done {
@@ -40,7 +44,7 @@ li {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 5em;
   letter-spacing: 1px;
   color: #303030;
 }
@@ -48,5 +52,14 @@ h1 {
 h2 {
   text-align: center;
   font-weight: lighter;
-  font-size: 30px;
+  font-size: 2em;
+}
+.container {
+  width: 100%;
+}
+@media (max-width:600px) {
+  .listBox {
+    float:none;
+  }
+
 }
